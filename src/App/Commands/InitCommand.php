@@ -9,7 +9,12 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Process\Process;
 
- 
+/* 
+
+    Comando de inicio con proceso persistente
+
+*/
+
 class InitCommand extends Command
 {
     protected function configure()

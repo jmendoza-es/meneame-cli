@@ -1,5 +1,13 @@
 <?php
 
+/**
+* Obtiene los últimos registros del RSS desde base de datos
+*
+* @return string 
+* @param string $type especifica el nombre de la tabla a la que consulta
+* @param int $num número de elementos a retornar
+*/
+
 function getArticles($type, $num = 0) {
 
     global $config;
@@ -40,6 +48,13 @@ function getArticles($type, $num = 0) {
         return "No hay elementos que mostrar.";
     }
 }
+
+/**
+* Inserta los nuevos registros del RSS en base de datos
+*
+* @return void 
+* @param array $data contiene un array con los datos del XML
+*/
 
 function updateArticles($data, $type) {
 

@@ -3,6 +3,14 @@
 require('config.php');
 require('ProcessData.php');
 
+/**
+* Obtiene los últimos registros del RSS desde base de datos
+*
+* @return void 
+* @param string $type especifica el nombre de la tabla a la que consulta
+* @param int $num número de elementos a retornar
+*/
+
 function connectArticles($f, $milliseconds)
 {
     $seconds=(int)$milliseconds/1000;
@@ -13,6 +21,7 @@ function connectArticles($f, $milliseconds)
     }
 }
 
+// Inicializador de actualización de base de datos
 connectArticles(function(){
     
     global $config;

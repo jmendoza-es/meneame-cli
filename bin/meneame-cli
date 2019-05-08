@@ -10,6 +10,11 @@ use Console\App\Commands\ArticleHomeCommand;
 use Console\App\Commands\ArticlePedingCommand;
 use Console\App\Commands\InitCommand;
 
+/* 
+
+    Definición del comando y opciones disponibles
+
+*/
 
 $application = new Application('Meneame CLI', '1.0');
 $application->add(new ArticleHomeCommand());
