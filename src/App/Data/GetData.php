@@ -46,7 +46,7 @@ connectArticles(function(){
 
     if($numPendientes) { // Pendientes
         try {
-            updateArticles($portada, $config['db_pendientes']);
+            updateArticles($pendientes, $config['db_pendientes']);
         } catch(Exception $e) {
             echo 'Se ha producido un error.';
         }
