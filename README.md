@@ -2,7 +2,7 @@
 
 Comandos disponibles:
 
-  - init: Inicializa el proceso de lectura de base de datos
+  - init: Inicializa el proceso de lectura de los ficheros RSS y rellena la base de datos
   - pendientes:  Obtiene todos los articulos de la cola de pendientes. Para especificar numero usar: pendientes [num]
   - portada: Obtiene todos los articulos de portada. Para especificar numero usar: portada [num]
   
